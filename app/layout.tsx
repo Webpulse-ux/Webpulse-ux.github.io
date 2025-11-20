@@ -15,6 +15,14 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "WebPulse UX",
   description: "WebPulse UX",
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/Logo.png", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/Logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -24,6 +32,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/Logo.png" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
