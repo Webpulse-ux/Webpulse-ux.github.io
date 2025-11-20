@@ -1,0 +1,6 @@
+.DS_Store
+.git2
+node_modules
+.next
+.turbo
+out
