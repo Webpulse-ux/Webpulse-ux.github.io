@@ -14,7 +14,7 @@ export function PageShell({ children, mainClassName = "" }: PageShellProps) {
       <div className="pointer-events-none absolute -top-40 left-1/2 h-[28rem] w-[28rem] -translate-x-1/2 rounded-full bg-gradient-to-br from-indigo-100/40 via-sky-50/35 to-violet-100/45 blur-[160px]" />
       <div className="relative">
         <header className="mx-auto flex w-full max-w-6xl flex-col items-start gap-4 px-6 py-8 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
-          <div className="flex items-center gap-3 sm:gap-4">
+          <Link href="/" className="flex items-center gap-3 sm:gap-4">
             <Image
               src="/Logo.png"
               alt="WebPulse UX logo"
@@ -29,7 +29,7 @@ export function PageShell({ children, mainClassName = "" }: PageShellProps) {
                 Digitale Studio
               </p>
             </div>
-          </div>
+          </Link>
           <nav className="flex w-full flex-wrap items-center gap-4 text-sm font-medium text-slate-600 sm:w-auto sm:justify-end lg:gap-8">
             {navLinks.map((link) => (
               <Link key={link.label} href={link.href} className="transition hover:text-indigo-600">
